@@ -1,0 +1,130 @@
+* { 
+  margin:0;
+  padding:0;
+  border:0;
+  line-height:1.625em;
+}
+
+body {
+  padding:2.25em;
+  max-width: 31.25em;
+}
+
+header img.actualhead {
+  height: 1.3125em;
+  width: 1.3125em;
+  margin-top:1em;
+  margin-bottom:0.5em;
+}
+
+header h1 {
+  font-weight: bold;
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  border-top: 0.1875em #ccc solid;
+  font-size: 1.125em;
+  padding-top: 0.8em;
+}
+
+header nav {
+  padding-bottom: 0.6em;
+  border-bottom: 0.1875em #ccc solid;
+  font-size: 1.125em;
+  margin-bottom:0.625em;
+}
+
+header a {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  color:#000;
+  margin-right: 0.625em;
+}
+
+header:hover a {
+  border-bottom:0.125em solid #999;
+}
+
+header:hover a:hover {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  border-bottom:0.125em solid #333;
+}
+
+main p {
+  font-family: 'Lora', 'Georgia', serif;
+  font-size: 0.9375em;
+  margin-bottom:0.9375em;
+}
+
+main ul {
+  list-style-type: none;
+}
+
+main ul li {
+  font-family:"Share Tech Mono",Helvetica,Arial,sans-serif;
+  border-top: 0.0625em #ccc solid; 
+  line-height: 1.125em; 
+  margin-top: 0.5em; 
+  padding-top:0.625em;
+}
+
+main ul li.postheader {
+  padding-bottom:0.5em;
+  margin-bottom:0.9375em;
+  border-bottom: 0.0625em #ccc solid; 
+}
+
+main ul li.first {
+  border-top:0;
+  margin-top:0;
+  padding-top:0;
+}
+
+main ul li .date {
+  font-size:0.75em;
+  display:block;
+}
+
+main ul li a {
+  font-size:1.125em;
+  color:#000;
+  text-decoration: none;
+}
+
+main ul li:hover a {
+  border-bottom:0.125em solid #999
+}
+
+main ul li:hover a:hover {
+  border-bottom:0.125em solid #333
+}
+
+.footer {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  font-size:0.875em; 
+  color:#999; 
+  border-top: 0.0625em #ccc solid; 
+  margin-top: 0.5em; 
+  padding-top:0.625em; 
+}
+
+div#post p {
+  line-height: 1.625em;
+}
+
+p a { 
+  text-decoration:none;
+  color:#000; 
+  border-bottom:0.125em solid #ccc;
+}
+
+p:hover a:hover{
+  border-bottom:0.125em solid #333;
+}
+
+input, select, button, textarea {
+  max-width: 100%;
+}
+
+meter, progress, output {
+  max-width: 100%;
+}

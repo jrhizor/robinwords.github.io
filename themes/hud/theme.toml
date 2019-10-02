@@ -1,21 +1,12 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Hud"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
+licenselink = "https://github.com/jrhizor/jrhizor.dev/blob/master/themes/hud/LICENSE"
+description = "A simple one-column blog theme that has a head icon at the top, making the site a heads up display."
+homepage = "https://github.com/jrhizor/jrhizor.dev/blob/master/themes/hud"
+tags = [] # todo (like https://github.com/pacollins/hugo-future-imperfect-slim/blob/662c8b0d89e80e8bedb24dc73b2bafc65d323aae/theme.toml)
+features = [] # todo
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Jared Rhizor"
+  homepage = "https://jrhizor.dev"
