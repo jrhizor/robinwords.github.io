@@ -1,0 +1,2 @@
+# jrhizor.dev
+personal blog
