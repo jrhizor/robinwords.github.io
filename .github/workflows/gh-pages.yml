@@ -3,7 +3,7 @@ name: update jrhizor.dev
 on:
   push:
     branches:
-    - master
+    - source
 
 jobs:
   build-deploy:
