@@ -5,15 +5,9 @@
   line-height:1.625em;
 }
 
-.wrap {
+body {
+  padding:2.25em;
   max-width: 31.25em;
-  margin: 0 0 auto 0;
-  padding: 2.25em;
-}
-
-.primary {
-  max-width: 31.25em;
-  margin: 0 0 auto 0;
 }
 
 header img.actualhead {
