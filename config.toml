@@ -1,3 +1,4 @@
 baseURL = "https://jrhizor.dev/"
 languageCode = "en-us"
 title = "Jared Rhizor"
+theme = "hud"
