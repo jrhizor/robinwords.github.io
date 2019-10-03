@@ -1,0 +1,24 @@
+name: update jrhizor.dev
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+    - name: initialize
+      uses: peaceiris/actions-hugo@v2.2.1
+      with:
+        hugo-version: '0.58.3'
+    - name: generate
+      run: hugo --gc --minify --cleanDestinationDir
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2.4.0
+      env:
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
