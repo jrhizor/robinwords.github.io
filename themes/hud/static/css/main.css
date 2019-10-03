@@ -39,7 +39,7 @@ header a {
   margin-right: 0.625em;
 }
 
-header:hover a {
+header:hover a, header a.active {
   border-bottom:0.125em solid #999;
 }
 

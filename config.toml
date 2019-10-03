@@ -2,3 +2,12 @@ baseURL = "https://jrhizor.dev/"
 languageCode = "en-us"
 title = "Jared Rhizor"
 theme = "hud"
+sectionPagesMenu = "navmenu"
+
+[menu]
+
+  [[menu.navmenu]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/"
