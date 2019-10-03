@@ -40,7 +40,7 @@ header a {
 }
 
 header:hover a, header a.active {
-  border-bottom:0.125em solid #999;
+  border-bottom:0.125em solid #ccc;
 }
 
 header:hover a:hover {
