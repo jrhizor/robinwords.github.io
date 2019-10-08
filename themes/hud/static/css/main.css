@@ -107,7 +107,7 @@ main ul li:hover a:hover {
   padding-top:0.625em; 
 }
 
-div#post p {
+#post p {
   line-height: 1.625em;
 }
 
@@ -127,4 +127,8 @@ input, select, button, textarea {
 
 meter, progress, output {
   max-width: 100%;
+}
+
+#post {
+  border-bottom:0.125em solid #ccc;
 }
