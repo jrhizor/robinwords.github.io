@@ -9,21 +9,5 @@
   <div id="post">
     {{ .Content }}
   </div>
-  <div id="gitalk-container"></div>
 </main>
-
-<script type="text/javascript">
-  var gitalk = new Gitalk({
-    clientID: '8b5ba6a6da78b55322d6',
-    clientSecret: '0c9a3d0b1472ff2ac8e2cac4e7c25d76d535ecbb',
-    repo: 'jrhizor.github.io',
-    owner: 'jrhizor',
-    admin: ['jrhizor'],
-    id: '{{.Permalink}}',
-    distractionFreeMode: true,
-    perPage: 100
-  });
-
-  gitalk.render('gitalk-container');
-</script>
 {{ end }}
