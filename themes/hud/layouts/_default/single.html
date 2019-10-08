@@ -6,8 +6,14 @@
       <a href="{{.Permalink}}">{{.Title}}</a>
     </li>
   </ul>
+
   <div id="post">
     {{ .Content }}
+  </div>
+
+  <div id="comments">
+    <h2>Comments</h2>
+    {{ partial "comments.html" $ }}
   </div>
 </main>
 {{ end }}
