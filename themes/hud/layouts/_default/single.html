@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <ul>
+  <ul class="posts">
     <li class="first postheader">
       <span class="date">{{.Date.Format "2006-01-02"}}</span>
       <a href="{{.Permalink}}">{{.Title}}</a>
@@ -13,6 +13,7 @@
 
   <div id="comments">
     <h2>Comments</h2>
+    <p><em>You can leave a comment using this <a href='https://github.com/jrhizor/jrhizor.github.io/issues/{{ .Params.GHissueID }}'>GitHub issue</a>.</em></p>
     {{ partial "comments.html" $ }}
   </div>
 </main>

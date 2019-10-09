@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <ul>
+  <ul class="posts">
   {{ range $i, $e := .Pages }}
     <li{{if $i }}{{else}} class="first"{{end}}>
       <span class="date">{{.Date.Format "2006-01-02"}}</span>

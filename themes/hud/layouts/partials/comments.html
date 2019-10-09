@@ -25,10 +25,6 @@
       else
       {
       let comments = xhr.response;
-  
-      let issueLink = document.createElement("p");
-      issueLink.innerHTML = "<i>You can leave a comment using this <a href='".concat(url, "'>GitHub issue</a>.</i>");
-      commentsDiv.appendChild(issueLink);
       
       comments.forEach(function(comment)
       {
