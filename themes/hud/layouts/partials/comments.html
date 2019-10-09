@@ -16,13 +16,7 @@
   
     xhr.onload = function()
     {
-      if (xhr.status != 200)
-      {
-      let errorText = document.createElement("p");
-      errorText.innerHTML = "<i>Comments for this post yet are not opened yet (or you have GitHub scripts disabled).</i>";
-      commentsDiv.appendChild(errorText);
-      }
-      else
+      if (xhr.status == 200)
       {
       let comments = xhr.response;
       
