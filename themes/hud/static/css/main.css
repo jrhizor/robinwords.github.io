@@ -160,11 +160,17 @@ meter, progress, output {
   border:0;
 }
 
-.gh-header:hover a.gh-username {
+.gh-header a.date {
+  color:#000;
+  text-decoration:none;
+  font-style:italic;
+}
+
+.gh-header:hover a.gh-username, .gh-header:hover a.date {
   border-bottom:0.125em solid #ccc;
 }
 
-a.gh-username:hover {
+a.gh-username:hover, .gh-header a.date:hover {
   border-bottom:0.125em solid #333;
 }
 

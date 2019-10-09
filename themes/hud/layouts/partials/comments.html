@@ -30,14 +30,15 @@
       {
           let commentContent = document.createElement("div");
           commentContent.setAttribute('class', 'gh-comment')
+          commentContent.setAttribute('id', 'comment-' + comment.id)
           let date = new Date(comment.created_at)
           var dateOptions = { timeZoneName: 'short', hour: 'numeric', minute: 'numeric', year: 'numeric', month: 'short', day: 'numeric' };
           commentContent.innerHTML = "".concat(
-            "<div class='gh-header'>",
+            "<div class='gh-header' id='comment-", comment.id, "'>",
               "<a href='", comment.user.html_url, "'><img src='", comment.user.avatar_url, "' class='gh-gravatar' /></a>",
               "<div style='margin:auto 0;'>",
               "<b><a class='gh-username' href='", comment.user.html_url, "'>", comment.user.login, "</a></b>",
-              " commented at <em>", date.toLocaleDateString("en-US", dateOptions), "</em>",
+              " commented at <a class='date' href='#comment-", comment.id, "'>", date.toLocaleDateString("en-US", dateOptions), "</a>",
               "</div>",
             "</div>",
             "<div class='gh-body'>",
