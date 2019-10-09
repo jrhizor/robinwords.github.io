@@ -32,18 +32,18 @@ header nav {
   margin-bottom:0.625em;
 }
 
-header a {
+nav a {
   font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
   text-decoration:none;
   color:#000;
   margin-right: 0.625em;
 }
 
-header:hover a, header a.active {
+nav:hover a, nav a.active {
   border-bottom:0.125em solid #ccc;
 }
 
-header:hover a:hover {
+nav:hover a:hover {
   font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
   text-decoration:none;
   border-bottom:0.125em solid #333;
@@ -205,7 +205,7 @@ blockquote p {
   margin-right: 0.5em;
   vertical-align: middle;
 }
-
+content/posts/test-post.md
 #comments h2 {
   font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
   font-weight: normal;
