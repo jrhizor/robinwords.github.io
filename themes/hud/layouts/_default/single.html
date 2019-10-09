@@ -11,10 +11,12 @@
     {{ .Content }}
   </div>
 
+  {{ if .Params.GHissueID }}
   <div id="comments">
     <h2>Comments</h2>
     <p><em>You can leave a comment using this <a href='https://github.com/jrhizor/jrhizor.github.io/issues/{{ .Params.GHissueID }}'>GitHub issue</a>.</em></p>
     {{ partial "comments.html" $ }}
   </div>
+  {{ end }}
 </main>
 {{ end }}
