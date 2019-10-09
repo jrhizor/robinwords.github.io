@@ -34,7 +34,7 @@
           var dateOptions = { timeZoneName: 'short', hour: 'numeric', minute: 'numeric', year: 'numeric', month: 'short', day: 'numeric' };
           commentContent.innerHTML = "".concat(
             "<div class='gh-header'>",
-              "<img src='", comment.user.avatar_url, "' />",
+              "<a href='", comment.user.html_url, "'><img src='", comment.user.avatar_url, "' class='gh-gravatar' /></a>",
               "<div style='margin:auto 0;'>",
               "<b><a class='gh-username' href='", comment.user.html_url, "'>", comment.user.login, "</a></b>",
               " commented at <em>", date.toLocaleDateString("en-US", dateOptions), "</em>",

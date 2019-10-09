@@ -152,14 +152,19 @@ meter, progress, output {
 
 .gh-header a {
   text-decoration:none;
-}
-
-.gh-header:hover a {
-  text-decoration:none;
-  border-bottom:0.125em solid #ccc;
+  border:0;
 }
 
 .gh-header a:hover {
+  text-decoration:none;
+  border:0;
+}
+
+.gh-header:hover a.gh-username {
+  border-bottom:0.125em solid #ccc;
+}
+
+a.gh-username:hover {
   border-bottom:0.125em solid #333;
 }
 
@@ -199,13 +204,13 @@ blockquote p {
   margin: 0;
 }
 
-.gh-header > img {
+.gh-gravatar {
   width: 1.5em;
   height: 1.5em;
   margin-right: 0.5em;
   vertical-align: middle;
 }
-content/posts/test-post.md
+
 #comments h2 {
   font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
   font-weight: normal;
