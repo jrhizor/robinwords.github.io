@@ -5,3 +5,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Share+Tech+Mono&display=swap"> 
 <link rel="stylesheet" href="{{ "css/main.css" | relURL}}">
 <meta name="viewport" content="width=572">
+
+{{ if (eq "Game" .Title) }}
+<script type="text/javascript" src="/js/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="/js/wordlist.js"></script> 
+<script type="text/javascript" src="/js/game.js"></script>
+{{ end }}
