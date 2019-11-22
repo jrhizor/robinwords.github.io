@@ -1,9 +1,9 @@
 {{ define "main" }}
 <main>
   <ul class="posts">
-  {{ range $i, $e := .Pages }}
+  {{ range $i, $e := .Pages.ByWeight }}
     <li{{if $i }}{{else}} class="first"{{end}}>
-      <span class="date">{{.Date.Format "2006-01-02"}}</span>
+      <span class="date">{{.Date.Format "2006-01-02"}} &bull; {{.Params.Genre}} &bull; {{.Params.Author_Count}} authors &bull; {{.Params.Sentences}} sentences</span>
       <a href="{{.Permalink}}">{{.Title}}</a>
     </li>
   {{ end }}
