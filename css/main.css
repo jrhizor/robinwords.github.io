@@ -1,0 +1,231 @@
+* { 
+  margin:0;
+  padding:0;
+  border:0;
+  line-height:1.625em;
+}
+
+body {
+  padding:2.25em;
+  max-width: 31.25em;
+}
+
+header img.actualhead {
+  height: 1.3125em;
+  width: 1.3125em;
+  margin-top:1em;
+  margin-bottom:0.5em;
+}
+
+header h1 {
+  font-weight: bold;
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  border-top: 0.1875em #ccc solid;
+  font-size: 1.125em;
+  padding-top: 0.8em;
+}
+
+header nav {
+  padding-bottom: 0.6em;
+  border-bottom: 0.1875em #ccc solid;
+  font-size: 1.125em;
+  margin-bottom:0.625em;
+}
+
+nav a {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  color:#000;
+  margin-right: 0.625em;
+}
+
+nav:hover a, nav a.active {
+  border-bottom:0.125em solid #ccc;
+}
+
+nav:hover a:hover {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  border-bottom:0.125em solid #333;
+}
+
+main p, main ul, main blockquote, main code {
+  font-family: 'Lora', 'Georgia', serif;
+  font-size: 0.9375em;
+  margin-bottom:0.9375em;
+}
+
+main ul.posts {
+  list-style-type: none;
+}
+
+main ul.posts li {
+  font-family:"Share Tech Mono",Helvetica,Arial,sans-serif;
+  border-top: 0.0625em #ccc solid; 
+  line-height: 1.125em; 
+  margin-top: 0.5em; 
+  padding-top:0.625em;
+}
+
+main ul.posts li.postheader {
+  padding-bottom:0.5em;
+  margin-bottom:0.9375em;
+  border-bottom: 0.0625em #ccc solid; 
+}
+
+main ul.posts li.first {
+  border-top:0;
+  margin-top:0;
+  padding-top:0;
+}
+
+main ul.posts li .date {
+  font-size:0.75em;
+  display:block;
+}
+
+main ul.posts li a {
+  font-size:1.125em;
+  color:#000;
+  text-decoration: none;
+}
+
+main ul.posts li:hover a {
+  border-bottom:0.125em solid #999
+}
+
+main ul.posts li:hover a:hover {
+  border-bottom:0.125em solid #333
+}
+
+.footer {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  font-size:0.875em; 
+  color:#666; 
+  border-top: 0.0625em #ccc solid; 
+  margin-top: 0.5em; 
+  padding-top:0.625em; 
+}
+
+#post p {
+  line-height: 1.625em;
+}
+
+#post p img {
+  max-width: 100%;
+}
+
+p a, ul a { 
+  text-decoration:none;
+  color:#000; 
+  border-bottom:0.125em solid #ccc;
+}
+
+p:hover a:hover, ul:hover a:hover {
+  border-bottom:0.125em solid #333;
+}
+
+input, select, button, textarea {
+  max-width: 100%;
+}
+
+meter, progress, output {
+  max-width: 100%;
+}
+
+.gh-comment {
+  margin-top:0.625em; 
+  border-top: 0.1875em #ccc solid;
+}
+
+.gh-header {
+  font-size:0.75em;
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  line-height: 1.625em;
+  display: flex;
+  color:#000;
+  padding-top:0.9375em;
+  padding-bottom:0.9375em;
+  margin-bottom:0.9375em;
+  border-bottom: 0.0625em #ccc solid;
+}
+
+.gh-header a {
+  text-decoration:none;
+  border:0;
+}
+
+.gh-header a:hover {
+  text-decoration:none;
+  border:0;
+}
+
+.gh-header a.date {
+  color:#000;
+  text-decoration:none;
+  font-style:italic;
+}
+
+.gh-header:hover a.gh-username, .gh-header:hover a.date {
+  border-bottom:0.125em solid #ccc;
+}
+
+a.gh-username:hover, .gh-header a.date:hover {
+  border-bottom:0.125em solid #333;
+}
+
+.gh-username {
+  color: #000;
+}
+
+code {
+  line-height: 1.45em;
+  background-color: #f6f8fa;
+  padding:0.25em;
+}
+
+pre code {
+  padding: 1em;
+  overflow: auto;
+  line-height: 1.45em;
+  background-color: #f6f8fa;
+  word-wrap: normal;
+  display: flex;
+  margin-bottom:0.9375em;
+}
+
+blockquote p {
+  padding: 1em;
+  overflow: auto;
+  line-height: 1.45em;
+  background-color: #f6f8fa;
+  word-wrap: normal;
+}
+
+.gh-comment p {
+  margin: 0;
+  line-height: 1.625em;
+}
+.gh-comment p:last-child {
+  margin: 0;
+}
+
+.gh-gravatar {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+#comments h2 {
+  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size:1.125em;
+  border-top: 0.1875em #ccc solid;
+  border-bottom: 0.0625em #ccc solid; 
+  line-height: 1.125em;
+  padding-top:0.625em;
+  padding-bottom:0.5em;
+  margin-bottom:0.9375em;
+  margin-top:0;
+}
