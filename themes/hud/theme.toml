@@ -1,8 +1,8 @@
 name = "Hud"
 license = "MIT"
-licenselink = "https://github.com/jrhizor/jrhizor.dev/blob/master/themes/hud/LICENSE"
+licenselink = "https://github.com/jrhizor/robinwords.github.io/blob/master/themes/hud/LICENSE"
 description = "A simple one-column blog theme that has a head icon at the top, making the site a heads up display."
-homepage = "https://github.com/jrhizor/jrhizor.dev/blob/master/themes/hud"
+homepage = "https://github.com/jrhizor/robinwords.github.io/blob/master/themes/hud"
 tags = [] # todo (like https://github.com/pacollins/hugo-future-imperfect-slim/blob/662c8b0d89e80e8bedb24dc73b2bafc65d323aae/theme.toml)
 features = [] # todo
 min_version = "0.41"

@@ -1,6 +1,6 @@
-baseURL = "https://jrhizor.dev/"
+baseURL = "https://robinwords.com/"
 languageCode = "en-us"
-title = "Jared Rhizor"
+title = "RobinWords"
 theme = "hud"
 sectionPagesMenu = "navmenu"
 
@@ -11,3 +11,9 @@ sectionPagesMenu = "navmenu"
     name = "About"
     title = "About"
     url = "/"
+
+  [[menu.navmenu]]
+    identifier = "game"
+    name = "Game"
+    title = "Game"
+    url = "/game"
