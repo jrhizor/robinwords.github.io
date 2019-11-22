@@ -4,7 +4,7 @@
     <nav>
       {{ $currentPage := . }}
       {{ range .Site.Menus.navmenu }}
-      <a class="sidebar-nav-item{{if ($currentPage.IsMenuCurrent "navmenu" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}  &#187;</a>
+      <a class='sidebar-nav-item{{if (($currentPage.IsMenuCurrent "navmenu" .))}} active{{ else if (eq $currentPage.Title .Title)}} active{{end}}' href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}  &#187;</a>
       {{ end }}
     </nav>
   </header>
