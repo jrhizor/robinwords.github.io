@@ -1,6 +1,6 @@
 baseURL = "https://robinwords.com/"
 languageCode = "en-us"
-title = "RobinWords"
+title = "About"
 theme = "hud"
 sectionPagesMenu = "navmenu"
 
