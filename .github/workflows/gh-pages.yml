@@ -22,12 +22,3 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
-    - name: lighthouse audit
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        url: 'https://robinwords.com/'
-    - name: save lighthouse audit results as an artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: report
-        path: './report'
