@@ -1,4 +1,4 @@
-name: update jrhizor.dev
+name: update robinwords.com
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
     - name: lighthouse audit
       uses: jakejarvis/lighthouse-action@master
       with:
-        url: 'https://jrhizor.dev/'
+        url: 'https://robinwords.com/'
     - name: save lighthouse audit results as an artifact
       uses: actions/upload-artifact@master
       with:
