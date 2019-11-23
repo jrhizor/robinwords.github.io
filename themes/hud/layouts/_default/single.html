@@ -2,7 +2,7 @@
 <main>
   <ul class="posts">
     <li class="first postheader">
-      <span class="date">{{.Date.Format "2006-01-02"}}</span>
+      <span class="date">{{.Date.Format "2006-01-02"}} &bull; {{.Params.Genre}} &bull; {{.Params.Author_Count}} authors &bull; {{.Params.Sentences}} sentences</span>
       <a href="{{.Permalink}}">{{.Title}}</a>
     </li>
   </ul>
