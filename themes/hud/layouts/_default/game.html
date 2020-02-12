@@ -1,95 +1,147 @@
 {{ define "main" }}
 
-<!-- apologies for the mess, I'm just archiving the old site as fast as possible -->
-<!-- if the mess upsets you, feel free to contribute at https://github.com/jrhizor/robinwords.github.io/ -->
-
 <style type="text/css">
 
-.word {
-	padding:3% 3% 1.5% 3%;
-	width:94%;
-	background:#def5fa;
-	float:none;
-	margin-right:0;
-	margin-bottom:15px;
-	display:block;
-	font-size:24px; 
-} 
-#errors {
-  padding:3% 3% 1.5% 3%;
-  width:94%;
-  color:#FFE8E8;
-  background:#fe2400;
-	display:block;
-	display:block;
-	font-size:24px; 
-}
-#win, #lose { letter-spacing:0; line-height:36px; background:#fff; border:7px solid #def5fa; width:406px; display:none; }
-#win em { color:#00CC00; font-style:normal }
-#lose em { color:#CC3300; font-style:normal }
-.person { background:url(/img/person.jpg) top right no-repeat #def5fa; }
-.computer { background:url(/img/computer.jpg) top right no-repeat #def5fa; } 
+  .word {
+    padding: 3% 3% 1.5% 3%;
+    width: 94%;
+    background: #def5fa;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 24px;
+  }
 
-#words a { color:#000; text-decoration: none; border-bottom:none; } 
+  #errors {
+    padding: 3% 3% 1.5% 3%;
+    width: 94%;
+    color: #FFE8E8;
+    background: #fe2400;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 24px;
+  }
 
-.error {
-    float:none;
-    margin-right:0;
-    margin-bottom:15px;
-    display:block;
-    font-size:24px; 
-}
-.error strong { font-weight:normal; text-transform:uppercase; font-size:10px; color:#fff; }
+  #win, #lose {
+    letter-spacing: 0;
+    line-height: 36px;
+    background: #fff;
+    border: 7px solid #def5fa;
+    width: 406px;
+    display: none;
+  }
 
-p.add { border-top: 1px dashed #94B4BF; display:block }
+  #win em {
+    color: #00CC00;
+    font-style: normal
+  }
 
-.word input {
-  padding:0;
-	width:100%;
-  height:100%;
-	border-left:0;
-	outline:none;
-  font-size:24px; 
-}
+  #lose em {
+    color: #CC3300;
+    font-style: normal
+  }
 
-.good { color: #49b64e; font-size:10px; display:block; float:left; margin-right:4px; }
-.bad { color: #c03e3e;font-size:10px; display:block; float:left; margin-right:4px;  } 
+  .person {
+    background: url(/img/person.jpg) top right no-repeat #def5fa;
+  }
 
-.nohover:hover { text-decoration:none; }
+  .computer {
+    background: url(/img/computer.jpg) top right no-repeat #def5fa;
+  }
 
-.show
-{
-	display:inline;
-}
-.hide, .hidden { display:none; }
+  #words a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .error {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 24px;
+  }
+
+  .error strong {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  p.add {
+    border-top: 1px dashed #94B4BF;
+    display: block
+  }
+
+  .word input {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 0;
+    outline: none;
+    font-size: 24px;
+  }
+
+  .good {
+    color: #49b64e;
+    font-size: 10px;
+    display: block;
+    float: left;
+    margin-right: 4px;
+  }
+
+  .bad {
+    color: #c03e3e;
+    font-size: 10px;
+    display: block;
+    float: left;
+    margin-right: 4px;
+  }
+
+  .nohover:hover {
+    text-decoration: none;
+  }
+
+  .show {
+    display: inline;
+  }
+
+  .hide, .hidden {
+    display: none;
+  }
 
 </style>
 
 <main>
   <div id="post">
-    <p>Change one letter in the four-letter word the computer gives you. The computer will then change one letter in the word you used and so on. You may not use proper nouns or reuse words that have already been used. The first person to use all possible words wins!</p>
+    <p>Change one letter in the four-letter word the computer gives you. The computer will then change one letter in the
+      word you used and so on. You may not use proper nouns or reuse words that have already been used. The first person
+      to use all possible words wins!</p>
   </div>
 </main>
-    <div id="words"></div>
-
-<form action="#" method="post" style="display:inline;" name="entry_form" id="entry_form">
-	<p class="word person" id="entry_area">
-        <input type="text" name="entry" id="entry" />
-    </p>
-</form>
 
 <p class="word" id="win">
-<em>Congratulations, you win!</em><br />The computer has no possible words left to use.<br />
-<span id="score_one"></span> words were used in your game.<br />
-<a href="/game">Play Again?</a>
+  <em>Congratulations, you win!</em><br/>The computer has no possible words left to use.<br/>
+  <span id="score_one"></span> words were used in your game.<br/>
+  <a href="/game">Play Again?</a>
 </p>
 
 <p class="word" id="lose">
-<em>Sorry, you lost.</em><br />There are no more possible words you can use.<br />
-<span id="score_two"></span> words were used in your game.<br />
-
-<a href="/game">Play Again?</a>
+  <em>Sorry, you lost.</em><br/>There are no more possible words you can use.<br/>
+  <span id="score_two"></span> words were used in your game.<br/>
+  <a href="/game">Play Again?</a>
 </p>
 
-<div id="errors"></div>
+<div id="errors" style="display:none"></div>
+
+<form action="#" method="post" style="display:inline;" name="entry_form" id="entry_form">
+  <div class="word person" id="entry_area">
+    <input type="text" name="entry" id="entry"/>
+  </div>
+</form>
+
+<div id="words"></div>
 {{ end }}
